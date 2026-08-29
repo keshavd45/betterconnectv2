@@ -2969,7 +2969,7 @@ function ScreenHome({
   nav
 }) {
   const tutKey = 'ft_tour_v1';
-  const [showTour, setShowTour] = React.useState(() => !localStorage.getItem(tutKey));
+  const [showTour, setShowTour] = React.useState(false); // GitHub demo: learning module disabled
   function dismissTour() {
     localStorage.setItem(tutKey, '1');
     setShowTour(false);
@@ -8963,7 +8963,7 @@ function ScreenAttendancePick({
   nav
 }) {
   const tutKey = 'att_tut_v2';
-  const [showTut, setShowTut] = React.useState(() => !localStorage.getItem(tutKey));
+  const [showTut, setShowTut] = React.useState(false); // GitHub demo: learning module disabled
   function dismissTut() {
     localStorage.setItem(tutKey, '1');
     setShowTut(false);
@@ -12142,7 +12142,7 @@ function ScreenTestPick({
   nav
 }) {
   const tutKey = 'test_tut_v3';
-  const [showTut, setShowTut] = React.useState(() => !localStorage.getItem(tutKey));
+  const [showTut, setShowTut] = React.useState(false); // GitHub demo: learning module disabled
   function dismissTut() {
     localStorage.setItem(tutKey, '1');
     setShowTut(false);
